@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--metadata-->
+    <meta charset="utf-8">
+    <meta name="description" content="Volume of Right Triangular Prism, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Ms Raffin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--For favicon on this page-->
+     <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
+    <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <title>Volume of a Triangular Pyramid in JS</title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+    <h1>Volume of a Right Triangular Pyramid in JS</h1>
+		<table>
+			<tr>
+				<td>
+          <!--text fields-->
+					<h3>Enter the dimensions of your pyramid:</h3>
+					<form action="javascript:calcVolume()">
+						<label for="side-a">Side a (m):</label>
+						<input type="number" step="any" id="side-a" placeholder="Enter side a (m)"><br><br>
+						<label for="side-b">Side b (m):</label>
+						<input type="number" step="any" id="side-b" placeholder="Enter side b (m)"><br><br>
+						<label for="height">Height (m):</label>
+						<input type="number" step="any" id="height" placeholder="Enter height (m)"><br><br>
+						<input type="submit" value="Calculate Volume">
+					</form>
+				</td>
+				<td width=45%>
+          <!--For image-->
+					<img src="./images/pyramid.jpg" alt="Pyramid" width="85%" height="auto"/>
+				</td>
+			</tr>
+		</table>
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+			<div id="volume">
+			</div>
+		</div>
+  </body>
+</html>
